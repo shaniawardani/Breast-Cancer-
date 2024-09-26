@@ -36,9 +36,9 @@ def login_form():
         if authenticate(username, password):
             st.session_state['logged_in'] = True  # Simpan status login
             st.session_state['username'] = username  # Simpan username
-            st.success("Login berhasil!")
+            st.success("Login Successful!")
         else:
-            st.error("Username atau Password salah!")
+            st.error("Username or Password false!")
 
 # Fungsi utama untuk aplikasi
 def main():
@@ -48,7 +48,7 @@ def main():
 
     # Jika sudah login, redirect ke halaman Home.py
     if st.session_state['logged_in']:
-        st.write ("[Login Berhasil](./pages/1-Home.py)")  # Pengaturan untuk alihkan ke halaman Home
+        st.write ("[Login Successful](./pages/1-Home.py)")  # Pengaturan untuk alihkan ke halaman Home
     else:
         login_form()  # Tampilkan form login jika belum login
 
