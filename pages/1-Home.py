@@ -1,6 +1,6 @@
 import streamlit as st
 
-#Configurasi layout streamlit
+
 def set_page_config():
     """Set the initial page configuration."""
     st.set_page_config(
@@ -10,13 +10,12 @@ def set_page_config():
         initial_sidebar_state="expanded",
     )
 
-#menjalankan fungsi utama 
 def main():
     set_page_config()
-    # Cek apakah pengguna sudah login
+
     if 'logged_in' in st.session_state and st.session_state['logged_in']:
         st.write(f"Halo, {st.session_state['username']}!")
-        # Tambahkan logika untuk halaman Home di sini
+        
         st.title("Fighting Breast Cancer Takes Everyone")
         st.write("""
              Breast cancer is one of the most common types of cancer affecting women worldwide.
@@ -43,8 +42,8 @@ def main():
              based on patterns identified in the data. This allows for accurate and reliable results 
              in a short amount of time.""")
     else:
-        st.warning("Anda belum login. Silakan login terlebih dahulu.")
-        st.write("[Klik di sini untuk login](/)")  # Mengarahkan kembali ke halaman login
+        st.warning("You are not logged in. Please log in first.")
+        st.write("[Click here to login](/)") 
    
     
 if __name__=="__main__":
