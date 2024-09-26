@@ -17,7 +17,7 @@ def main():
     if 'logged_in' in st.session_state and st.session_state['logged_in']:
         st.write(f"Halo, {st.session_state['username']}!")
         # Tambahkan logika untuk halaman Home di sini
-        st.title("Welcome to the Breast Cancer 🎗️")
+        st.title("Fighting Breast Cancer Takes Everyone")
         st.write("""
              Breast cancer is one of the most common types of cancer affecting women worldwide.
              Though it may seem frightening, early detection and proper treatment greatly increase

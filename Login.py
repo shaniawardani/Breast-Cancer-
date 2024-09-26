@@ -28,8 +28,8 @@ def login_form():
     st.title("Login")
 
     # Input untuk username dan password
-    username = st.text_input("Masukkan Username")
-    password = st.text_input("Masukkan Password", type="password")
+    username = st.text_input("username")
+    password = st.text_input("Password", type="password")
 
     # Tombol login
     if st.button("Login"):
