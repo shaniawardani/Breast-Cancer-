@@ -34,7 +34,11 @@ def render_sidebar():
     """Render the sidebar with navigation."""
     with st.sidebar:
         st.markdown(
-            "![Logo](https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/logo.png?raw=true)"
+            """
+            <div style="text-align: center;">
+                <img src='https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/logo.png?raw=true' class='sidebar-logo'/>
+            </div>
+            """, unsafe_allow_html=True
         )
 
 def authenticate(username, password):
