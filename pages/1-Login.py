@@ -9,6 +9,34 @@ def set_page_config():
         initial_sidebar_state="expanded",
     )
 
+def inject_custom_css():
+    """Inject custom CSS for styling."""
+    st.markdown(
+        """
+        <style>
+        /* Styling the header image */
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+        
+        /* Change the background color of the sidebar */
+        [data-testid="stSidebar"] {
+            background-color: #FFB3D9;
+        }
+        </style>
+        
+        """,
+        unsafe_allow_html=True,
+    )
+
+def render_sidebar():
+    """Render the sidebar with navigation."""
+    with st.sidebar:
+        st.markdown(
+            "![Logo](https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/logo.png?raw=true)"
+        )
+
 def authenticate(username, password):
     
     valid_users = {
@@ -41,13 +69,15 @@ def login_form():
 
 
 def main():
+    inject_custom_css()
+    render_sidebar()
     
     if 'logged_in' not in st.session_state:
         st.session_state['logged_in'] = False
 
     
     if st.session_state['logged_in']:
-        st.write ("[Login Successful](./pages/1-Home.py)") 
+        st.write ("[Login Successful](http://localhost:8501/)") 
     else:
         login_form()
 

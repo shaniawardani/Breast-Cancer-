@@ -9,8 +9,37 @@ def set_page_config():
         initial_sidebar_state="expanded",
     )
 
+def inject_custom_css():
+    """Inject custom CSS for styling."""
+    st.markdown(
+        """
+        <style>
+        /* Styling the header image */
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+        
+        /* Change the background color of the sidebar */
+        [data-testid="stSidebar"] {
+            background-color: #FFB3D9;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+def render_sidebar():
+    """Render the sidebar with navigation."""
+    with st.sidebar:
+        st.markdown(
+            "![Logo](https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/logo.png?raw=true)"
+        )
+
 def main():
     set_page_config()
+    inject_custom_css()
+    render_sidebar()
     st.title("About Us 🌐")
     st.write("""Welcome to Breast Cancer Analysis, a website dedicated to empowering patients, healthcare professionals, 
              and researchers with advanced tools for understanding and diagnosing breast cancer. Our platform leverages 
