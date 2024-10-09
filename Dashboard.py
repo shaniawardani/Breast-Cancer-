@@ -35,7 +35,11 @@ def render_sidebar():
     """Render the sidebar with navigation."""
     with st.sidebar:
         st.markdown(
-            "![Logo](https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/logo.png?raw=true)"
+            """
+            <div style="text-align: center;">
+                <img src='https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/logo.png?raw=true' class='sidebar-logo'/>
+            </div>
+            """, unsafe_allow_html=True
         )
         
 def main():
@@ -47,7 +51,16 @@ def main():
         col1,col2=st.columns(2)
         with col1:
 
-            st.title("Fighting Breast Cancer Takes Everyone")
+            st.markdown(
+                """
+                <h1 style='color: #1E1E1E;'>
+                    Fighting 
+                    <span style='color: #AF0B56;'>Breast Cancer</span> 
+                    Takes Everyone
+                </h1>
+                """,
+                unsafe_allow_html=True
+            )
             st.write("Cancer may challenge your body but it can never break your spirit.")
         with col2:
             inject_custom_css()
