@@ -26,7 +26,7 @@ def inject_custom_css():
             background-color: #FFB3D9;
         }
         </style>
-        <img src='https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/jumbotronnew.png?raw=true' class='header-image'/>
+        <img src='https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/jumbotron1.png?raw=true' class='header-image'/>
         """,
         unsafe_allow_html=True,
     )
@@ -50,7 +50,7 @@ def main():
         
         col1,col2=st.columns(2)
         with col1:
-            
+
             st.markdown(
                 """
                 <h1 style='color: #1E1E1E;'>

@@ -55,6 +55,7 @@ def main():
     st.subheader("Mission 🎗️")
     st.write("""To leverage technology for eargly breast cancer diagnosis and personalized treatment, 
              empowering healthcare providers with accurate, data-driven insights.""")
+    col
 
 if __name__=="__main__":
     main()
