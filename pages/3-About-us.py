@@ -15,6 +15,16 @@ def inject_custom_css():
     st.markdown(
         """
         <style>
+        .about-container {
+            background: linear-gradient(to bottom, #ffffff 50%, #ffd1dc 50%);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
         /* Styling the header image */
         .header-image {
             width: 100%;
@@ -50,6 +60,9 @@ def main():
     col1,col2=st.columns(2)
     with col1:
 
+            inject_custom_css()
+            st.write("Cancer may challenge your body but it can never break your spirit.")
+    with col2:
             st.markdown(
                 """
                 <h1 style='color: #1E1E1E;'>
@@ -60,8 +73,5 @@ def main():
                 """,
                 unsafe_allow_html=True
             )
-            st.write("Cancer may challenge your body but it can never break your spirit.")
-    with col2:
-            inject_custom_css()
 if __name__=="__main__":
     main()
