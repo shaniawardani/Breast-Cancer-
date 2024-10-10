@@ -25,6 +25,7 @@ def inject_custom_css():
             background-color: #FFB3D9;
         }
         </style>
+        <img src ='https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/about%20us.png?raw=true'
         """,
         unsafe_allow_html=True,
     )
@@ -55,7 +56,6 @@ def main():
     st.subheader("Mission 🎗️")
     st.write("""To leverage technology for eargly breast cancer diagnosis and personalized treatment, 
              empowering healthcare providers with accurate, data-driven insights.""")
-    col
 
 if __name__=="__main__":
     main()
