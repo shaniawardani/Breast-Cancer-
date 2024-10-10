@@ -15,16 +15,6 @@ def inject_custom_css():
     st.markdown(
         """
         <style>
-        .about-container {
-            background: linear-gradient(to bottom, #ffffff 50%, #ffd1dc 50%);
-            padding: 20px;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
         /* Styling the header image */
         .header-image {
             width: 100%;
@@ -55,21 +45,31 @@ def render_sidebar():
 def main():
     set_page_config()
     render_sidebar()
-    st.write("BLALALA")
         
     col1,col2=st.columns(2)
     with col1:
 
             inject_custom_css()
-            st.write("Cancer may challenge your body but it can never break your spirit.")
     with col2:
             st.markdown(
                 """
-                <h1 style='color: #1E1E1E;'>
-                    Fighting 
-                    <span style='color: #AF0B56;'>Breast Cancer</span> 
-                    Takes Everyone
+                <h1 style='color: #000000; fontsize: 64px;'>
+                    About Us 
                 </h1>
+                Welcome to Breast Cancer Analysis! A website dedicated to empowering patients, 
+                healthcare professionals, and researchers with advanced tools for understanding and diagnosing breast cancer. 
+                Our platform leverages cutting-edge machine learning technology to analyze medical data, providing accurate and efficient 
+                breast cancer classification to aid in early detection and personalized treatment plans.
+
+                <h2 style='color: #A65277; fontsize: 28px;'>
+                    Vision 
+                </h2>
+                To integrate AI and healthcare, making breast cancer diagnosis faster and more precise, ultimately improving patient outcomes worldwide.
+
+                <h3 style='color: #A65277; fontsize: 28px;'>
+                    Mision
+                </h3>
+                To leverage technology for eargly breast cancer diagnosis and personalized treatment, empowering healthcare providers with accurate, data-driven insights.
                 """,
                 unsafe_allow_html=True
             )
