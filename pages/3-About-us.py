@@ -71,10 +71,10 @@ def main():
                 To integrate AI and healthcare, making breast cancer diagnosis faster and more precise, ultimately improving patient outcomes worldwide.
                 </p/>
 
-                <h3 style='color: #A65277; fontsize: 28px;'>
-                <p style='fontsize: 18px;'>
+                <h3 style='color: #A65277; fontsize: 64px;'>
                     Mision
                 </h3>
+
                 <p style='fontsize: 18px;'>
                 To leverage technology for eargly breast cancer diagnosis and personalized treatment, empowering healthcare providers with accurate, data-driven insights.
                 </p/>
