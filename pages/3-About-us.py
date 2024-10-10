@@ -56,20 +56,28 @@ def main():
                 <h1 style='color: #000000; fontsize: 64px;'>
                     About Us 
                 </h1>
+                <p style='fontsize: 18px;'>
                 Welcome to Breast Cancer Analysis! A website dedicated to empowering patients, 
                 healthcare professionals, and researchers with advanced tools for understanding and diagnosing breast cancer. 
                 Our platform leverages cutting-edge machine learning technology to analyze medical data, providing accurate and efficient 
                 breast cancer classification to aid in early detection and personalized treatment plans.
+                </p/>
 
                 <h2 style='color: #A65277; fontsize: 28px;'>
                     Vision 
                 </h2>
+
+                <p style='fontsize: 18px;'>
                 To integrate AI and healthcare, making breast cancer diagnosis faster and more precise, ultimately improving patient outcomes worldwide.
+                </p/>
 
                 <h3 style='color: #A65277; fontsize: 28px;'>
+                <p style='fontsize: 18px;'>
                     Mision
                 </h3>
+                <p style='fontsize: 18px;'>
                 To leverage technology for eargly breast cancer diagnosis and personalized treatment, empowering healthcare providers with accurate, data-driven insights.
+                </p/>
                 """,
                 unsafe_allow_html=True
             )
