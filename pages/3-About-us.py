@@ -25,7 +25,7 @@ def inject_custom_css():
             background-color: #FFB3D9;
         }
         </style>
-        <img src ='https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/about%20us.png?raw=true'
+        <img src='https://github.com/shaniawardani/Breast-Cancer-/blob/main/asset/aboutus.png?raw=true' class='header-image'/>
         """,
         unsafe_allow_html=True,
     )
