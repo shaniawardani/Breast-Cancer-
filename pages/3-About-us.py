@@ -15,7 +15,7 @@ def inject_custom_css():
     st.markdown(
         """
         <style>
-        <body style='background-color: #FFB3D9;'>
+        .stApp {background-color: #FFB3D9;}
         /* Styling the header image */
         .header-image {
             width: 100%;
